@@ -1,0 +1,22 @@
+.result {
+  margin-top: 10px;
+  padding: 10px 0 30px;
+  background: linear-gradient(to bottom, #fdfdc9, #ddffa1);
+  color: #3c4924;
+}
+
+.result h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.result h2 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.result h2 span {
+  font-weight: 500;
+  color: orangered;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,131 @@
+body {
+  background-color: #aedff5;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* flying clouds */
+
+.clouds {
+  position: fixed;
+  padding-top: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@keyframes flyingClouds {
+  0% {
+    margin-left: -800px;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.cloud1 {
+  animation: flyingClouds 60s linear infinite;
+  transform: scale(0.6);
+}
+
+.cloud2 {
+  animation: flyingClouds 45s linear infinite;
+  transform: scale(0.3);
+}
+
+.cloud3 {
+  animation: flyingClouds 50s linear infinite;
+  transform: scale(0.5);
+}
+
+.cloud4 {
+  animation: flyingClouds 35s linear infinite;
+  transform: scale(0.4);
+}
+
+.cloud5 {
+  animation: flyingClouds 40s linear infinite;
+  transform: scale(0.5);
+}
+
+.cloud {
+  position: relative;
+  height: 100px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 10px 10px 5px 5px #eee;
+}
+
+.cloud:after,
+.cloud::before {
+  position: absolute;
+  background-color: #fff;
+  content: "";
+}
+
+.cloud:after {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  left: 50px;
+  top: -50px;
+}
+
+.cloud:before {
+  border-radius: 200px;
+  height: 150px;
+  width: 150px;
+  right: 50px;
+  top: -50px;
+}
+
+/* App */
+
+.App {
+  width: 40%;
+  height: 70vh;
+  margin: 35px auto;
+  text-align: center;
+}
+
+.App form {
+  background-color: #ddffa1;
+}
+
+.App input,
+.App button {
+  margin: 30px 10px;
+  border: 2px solid #748d46;
+  background-color: #fff;
+  outline: none;
+}
+
+.App input {
+  padding: 15px 5px;
+  color: #3c4924;
+}
+
+.App input:focus {
+  font-weight: bold;
+}
+
+.App button {
+  padding: 15px 30px;
+  cursor: pointer;
+  color: #748d46;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.App button:hover {
+  background-color: #748d46;
+  color: white;
+}
